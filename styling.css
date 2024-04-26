@@ -124,7 +124,8 @@ footer p {
     }
 
     .hero {
-        background-color:darkgray ;
+        background-color: darkgray ;
+        color: white;
     }
 
     .cta-button {
