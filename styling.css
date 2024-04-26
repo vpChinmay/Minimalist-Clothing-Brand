@@ -1,4 +1,4 @@
-/* Resetting default styles and setting up global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +10,14 @@ body {
 }
 
 /* Header styles */
+.heading1 {
+    margin: 10px;
+    font-family: "Nothing You Could Do", cursive;
+    font-style: normal;
+    font-size: 3rem;
+
+      
+}
 header {
     background-color: #fff; /* White header background */
     padding: 20px;
@@ -124,7 +132,7 @@ footer p {
     }
 
     .hero {
-        background-color: darkgray ;
+        background-color:darkgray;
         color: white;
     }
 
