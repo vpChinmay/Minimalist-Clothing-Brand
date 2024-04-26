@@ -34,7 +34,6 @@ nav a {
     padding: 10px 20px;
     margin: 0 10px;
     transition: color 0.3s;
-    margin-left: 5px;
 }
 
 nav a:hover {
@@ -157,7 +156,7 @@ footer p {
     }
 }
 @media (max-width: 460px) {
-    header h1 {
+    .heading1 {
         font-size:35PX;
     }
 
