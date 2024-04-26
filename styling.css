@@ -41,7 +41,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: darkgray;
     text-align: center;
 }
 
@@ -121,6 +121,10 @@ footer p {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .hero {
+        background-color:darkgray ;
     }
 
     .cta-button {
