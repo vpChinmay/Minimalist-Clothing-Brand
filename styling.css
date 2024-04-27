@@ -173,7 +173,7 @@ footer p {
     }
 
     .hero {
-        background-color:darkgray;
+        background-color:rgb(156, 204, 255);
         color: white;
     }
 
@@ -193,8 +193,11 @@ footer p {
     footer p {
         font-size: 0.8rem;
     }
+
     nav a {
-        margin: 0px;
+        margin: 0 0px;
     }
+    
+
 }
 
