@@ -3,23 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Header styles */
 .heading1 {
     margin: 10px;
-    font-family: "Nothing You Could Do", cursive;
+    font-family: "Playfair Display SC", serif;
     font-style: normal;
     font-size: 3rem;
 
       
 }
 header {
-    background-color: #fff; /* White header background */
+    background-color: #ffffff; /* White header background */
     padding: 20px;
     text-align: center;
 }
@@ -38,13 +35,16 @@ nav a {
 
 nav a:hover {
     color: #666; /* Lighter grey on hover */
-    border: 2px solid black;
-    border-radius: 5px;
+    font-weight:700 ;
+    border-bottom: 3px solid black;
+    background-color: #faf8f8;
+    /* border-radius: 5px; */
 }
 
 /* Hero section styles */
 .hero {
-    background-image: url('hero-image.jpg');
+    background-color: #ffffff;
+    /* background-image: url('hero-image.jpg'); */
     background-size: cover;
     background-position: center;
     height: 100vh;
