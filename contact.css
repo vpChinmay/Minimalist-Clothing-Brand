@@ -125,3 +125,8 @@ button:hover {
         padding: 10px 2px;
     }
 }
+@media (max-width: 460px) {
+    .heading1 {
+        font-size: 35px;
+    }
+}
