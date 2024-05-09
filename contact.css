@@ -3,7 +3,7 @@
     font-family: "Playfair Display SC", serif;
     font-style: normal;
     font-size: 3rem;
-color: #ffffff;
+    color: #ffffff;
       
 }
 
@@ -19,7 +19,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333; /* Dark grey link color */
+    color: #333333; /* Dark grey link color */
     padding: 10px 18px;
     margin: 0 10px;
     background-color: #faf8f8;
@@ -29,100 +29,140 @@ nav a {
 
 #contact {
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 50px;
 }
+
+/* start to the body  */
 
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #cacaca
+    background-color: #ffffff
 
 }
 
 .container {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
+.form-heading {
+    height: auto;
+    width: 100;
+    background-color: rgb(156, 204, 255);
+    color: rgb(0, 0, 0);
+    padding-left:50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    font-weight:normal;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
+/* form inputs */
 
-label {
+.coolinput {
+    width: 400px;
+    /* position: static; */
+    margin: 20px;
+    margin-left: 20px;
+  }
+  
+  .coolinput label.text {
+    font-size: 1.4rem;
+    color: #818CF8;
+    font-weight: 700;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #e8e8e8;
+    height: 25px;
+    width: 400px;
+    font-size: large;
+    margin-left: 30px;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+  
+  .input {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-}
+  }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+  .main-input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
     border-radius: 5px;
-    box-sizing: border-box;
-}
+    background: #e8e8e8;
+    height: 60px;
+    width: 400px;
+    font-size: large;
+    margin-left: 30px;
+  }
 
-textarea {
-    height: 150px;
-    resize: none;
-}
+  /* submit button */
 
-button {
-    background-color: #333;
-    color: #fff;
+  button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
     border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
     cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-    .container {
-        max-width: 90%;
-        margin: 30px auto;
+    margin-left: 30px;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
     }
-}
-
-@media screen and (max-width: 400px) {
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        padding: 8px;
-        font-size: 14px;
+  
+    to {
+      transform: translateY(-0.1em);
     }
-
-    button {
-        padding: 10px 18px;
-        font-size: 14px;
-    }
-    nav a {
-        padding: 10px 2px;
-    }
-}
-@media (max-width: 460px) {
-    .heading1 {
-        font-size: 35px;
-    }
-}
+  }
+  
